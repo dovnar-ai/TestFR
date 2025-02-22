@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключення бібліотеки EmailJS для відправки електронних листів -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Підключення власного скрипта (script.js) з відстроченим виконанням -->
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Визначення кодування сторінки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Підтримка адаптивного дизайну -->
+    <title>Соціальна активність</title> <!-- Заголовок сторінки -->
+    <!-- Підключення стилів (styles.css) для оформлення сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Контейнер для групи кнопок та запитання -->
+    <div class="button-group">
+        <!-- Заголовок для питання -->
+        <h2>Наскільки Ви соціально активні?</h2>
+        
+        <!-- Радіо кнопки для вибору відповіді на питання -->
+        <!-- Перша опція -->
+        <input type="radio" id="0" name="activ" value="Повна відсутність активності">
+        <label for="0">Повна відсутність активності</label><br>
+        
+        <!-- Друга опція -->
+        <input type="radio" id="1" name="activ" value="Незначна активність">
+        <label for="1">Незначна активність</label><br>
+        
+        <!-- Третя опція -->
+        <input type="radio" id="2" name="activ" value="Активний, але не постійно">
+        <label for="2">Активний, але не постійно</label><br>
+        
+        <!-- Четверта опція -->
+        <input type="radio" id="3" name="activ" value="Активний постійно">
+        <label for="3">Активний постійно</label><br>
+        <div class="navigation-buttons">
+        <!-- Кнопка для повернення на попередню сторінку -->
+        <form action="./page17.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page19.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

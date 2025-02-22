@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключаємо бібліотеку EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Звички</title>
+    <!-- Підключаємо CSS файл -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="container">
+        <!-- Заголовок для введення цигарок -->
+        <h2>Вкажіть кількість цигарок, що Ви скурюєте за день (шт)</h2>
+        <!-- Поле для введення цигарок(числове поле) -->
+        <input type="number" id="Sig" placeholder="Кількість сигарок">
+
+        <!-- Заголовок для введення алкоголь -->
+        <h2>Вкажіть кількість кріпких алкогольних напоїв, що Ви вживаєте на добу (гр)</h2>
+        <!-- Поле для введення алкоголю (числове поле) -->
+        <input type="number" id="Alk" placeholder="Кількість алкоголю">
+        <div class="navigation-buttons">
+        <!-- Форма для повернення на попередню сторінку -->
+        <form action="./page6.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page8.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

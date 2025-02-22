@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключаємо бібліотеку EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>IMT</title>
+    <!-- Підключаємо CSS файл -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="container">
+        <!-- Заголовок для введення ваги -->
+        <h2>Вкажіть свою вагу (кг)</h2>
+        <!-- Поле для введення ваги (числове поле) -->
+        <input type="number" id="Ves" placeholder="Вага">
+
+        <!-- Заголовок для введення зросту -->
+        <h2>Вкажіть свій зріст (см)</h2>
+        <!-- Поле для введення зросту (числове поле) -->
+        <input type="number" id="Rost" placeholder="Зріст">
+        <div class="navigation-buttons">
+        <!-- Форма для повернення на попередню сторінку -->
+        <form action="./page2.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page4.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

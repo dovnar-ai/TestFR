@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключення бібліотеки EmailJS для відправки електронних листів -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Підключення власного скрипта (script.js) з відстроченим виконанням -->
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Визначення кодування сторінки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Підтримка адаптивного дизайну -->
+    <title>Час з друзями</title> <!-- Заголовок сторінки -->
+    <!-- Підключення стилів (styles.css) для оформлення сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Контейнер для групи кнопок та запитання -->
+    <div class="button-group">
+        <!-- Заголовок для питання -->
+        <h2>Спільне проведення часу з сім'єю та друзями</h2>
+        
+        <!-- Радіо кнопки для вибору відповіді на питання -->
+        <!-- Перша опція -->
+        <input type="radio" id="0" name="chas" value="Відсутнє">
+        <label for="0">Відсутнє</label><br>
+        
+        <!-- Друга опція -->
+        <input type="radio" id="1" name="chas" value="Іноді">
+        <label for="1">Іноді</label><br>
+        
+        <!-- Третя опція -->
+        <input type="radio" id="2" name="chas" value="Досить часто">
+        <label for="2">Досить часто</label><br>
+        
+        <!-- Четверта опція -->
+        <input type="radio" id="3" name="chas" value="Дуже часто">
+        <label for="3">Дуже часто</label><br>
+        <div class="navigation-buttons">
+        <!-- Кнопка для повернення на попередню сторінку -->
+        <form action="./page19.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page21.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

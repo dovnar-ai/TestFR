@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключаємо бібліотеку EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Тиск</title>
+    <!-- Підключаємо CSS файл -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="container">
+        <!-- Заголовок для введення систолічного тиску -->
+        <h2>Вкажіть значення свого систолічного тиску у спокої (мм.рт.ст)</h2>
+        <!-- Поле для введення систолічного тиску (числове поле) -->
+        <input type="number" id="systolicPressure" placeholder="Систолічний тиск">
+
+        <!-- Заголовок для введення діастолічного тиску -->
+        <h2>Вкажіть значення свого діастолічного тиску у спокої (мм.рт.ст)</h2>
+        <!-- Поле для введення діастолічного тиску (числове поле) -->
+        <input type="number" id="diastolicPressure" placeholder="Діастолічний тиск">
+        <div class="navigation-buttons">
+        <!-- Форма для повернення на попередню сторінку -->
+        <form action="./page3.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page5.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключення бібліотеки EmailJS для відправки електронних листів -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Підключення власного скрипта (script.js) з відстроченим виконанням -->
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Визначення кодування сторінки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Підтримка адаптивного дизайну -->
+    <title>Здоров'я</title> <!-- Заголовок сторінки -->
+    <!-- Підключення стилів (styles.css) для оформлення сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Контейнер для групи кнопок та запитання -->
+    <div class="button-group">
+        <!-- Заголовок для питання -->
+        <h2>Оцініть рівень свого здоров'я</h2>
+        
+        <!-- Радіо кнопки для вибору відповіді на питання -->
+        <!-- Перша опція -->
+        <input type="radio" id="0" name="zdorov" value="Немає здоров'я">
+        <label for="0">Немає здоров'я</label><br>
+        
+        <!-- Друга опція -->
+        <input type="radio" id="1" name="zdorov" value="Погане здоров'я">
+        <label for="1">Погане здоров'я</label><br>
+        
+        <!-- Третя опція -->
+        <input type="radio" id="2" name="zdorov" value="Хороше здоров'я">
+        <label for="2">Хороше здоров'я</label><br>
+        
+        <!-- Четверта опція -->
+        <input type="radio" id="3" name="zdorov" value="Прекрасне здоров'я">
+        <label for="3">Прекрасне здоров'я</label><br>
+        <div class="navigation-buttons">
+        <!-- Кнопка для повернення на попередню сторінку -->
+        <form action="./page13.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page15.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключення бібліотеки EmailJS для відправки електронних листів -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Підключення власного скрипта (script.js) з відстроченим виконанням -->
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Визначення кодування сторінки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Підтримка адаптивного дизайну -->
+    <title>Любов</title> <!-- Заголовок сторінки -->
+    <!-- Підключення стилів (styles.css) для оформлення сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Контейнер для групи кнопок та запитання -->
+    <div class="button-group">
+        <!-- Заголовок для питання -->
+        <h2>Чи присутня у Вашому житті любов?</h2>
+        
+        <!-- Радіо кнопки для вибору відповіді на питання -->
+        <!-- Перша опція -->
+        <input type="radio" id="0" name="lubov" value="Ніхто не любив і не любить">
+        <label for="0">Ніхто не любив і не любить</label><br>
+        
+        <!-- Друга опція -->
+        <input type="radio" id="1" name="lubov" value="Любили у минулому">
+        <label for="1">Любили у минулому</label><br>
+        
+        <!-- Третя опція -->
+        <input type="radio" id="2" name="lubov" value="Люблять лише близькі люди">
+        <label for="2">Люблять лише близькі люди</label><br>
+        
+        <!-- Четверта опція -->
+        <input type="radio" id="3" name="lubov" value="Люблять рідні, близькі та інші люди">
+        <label for="3">Люблять рідні, близькі та інші люди</label><br>
+        <div class="navigation-buttons">
+        <!-- Кнопка для повернення на попередню сторінку -->
+        <form action="./page15.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page17.html" method="get">
+            <button id="3" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

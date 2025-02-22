@@ -1,0 +1,50 @@
+<!DOCTYPE html> <!-- Вказуємо тип документа як HTML5 -->
+<html lang="uk"> <!-- Вказуємо мову сторінки (українська) -->
+<head>
+    <!-- Підключаємо бібліотеку EmailJS для відправки електронних листів -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл з атрибутом defer (завантажується після завантаження сторінки) -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки (UTF-8 для підтримки кирилиці) -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Сон</title>
+    <!-- Підключаємо CSS файл для стилізації сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="button-group">
+        <!-- Заголовок для вибору порушень сну -->
+        <h2>Чи порушений режим сну</h2>
+        <!-- Радіобутон для вибору статі "стабільний" -->
+        <input type="radio" id="0" name="son" value="стабільний">
+        <!-- Підпис для радіобутона "стабільний" -->
+        <label for="0">стабільний</label><br>
+
+        <!-- Радіобутон для вибору статі "порушений" -->
+        <input type="radio" id="1" name="son" value="порушений">
+        <!-- Підпис для радіобутона "порушений" -->
+        <label for="1">порушений</label><br>
+		
+		<!-- Заголовок для введення ваги -->
+        <h2>Зазначте приблизну тривалість Вашого сну (год)</h2>
+        <!-- Поле для введення тривалості сну (числове поле) -->
+        <input type="number" id="Son" placeholder="Тривалість сну">
+		
+        <div class="navigation-buttons">		
+		<!-- Форма для переходу на попередню сторінку -->
+        <form action="./page5.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+		
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page7.html" method="get">
+            <button id="2" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

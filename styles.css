@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /* Встановлення шрифту */
+    margin: 0; /* Видалення зовнішніх відступів */
+    padding: 0; /* Видалення внутрішніх відступів */
+    display: flex; /* Використання гнучкого контейнера */
+    justify-content: center; /* Центрування вмісту по горизонталі */
+    align-items: center; /* Центрування вмісту по вертикалі */
+    height: 100vh; /* Висота рівна 100% екрану */
+    background-color: lightblue; /* Фонова заливка світло-блакитного кольору */
+}
+
+.container {
+    text-align: center; /* Вирівнювання тексту по центру */
+    width: 90%; /* Ширина блоку - 90% екрану */
+    max-width: 600px; /* Максимальна ширина контейнера */
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%; /* Поля введення займають всю доступну ширину */
+    padding: 10px; /* Внутрішній відступ для зручності вводу */
+    margin: 10px 0; /* Відступи зверху та знизу */
+	font-size:24px;
+}
+
+.radio-group {
+    flex-direction: column; /* Встановлення вертикального розташування */
+    align-items: flex-start; /* Вирівнювання елементів по лівому краю */
+	transform: scale(1.5);
+}
+
+.navigation-buttons {
+    display: flex; /* Використання гнучкого контейнера для кнопок */
+    flex-flow: column wrap;
+    justify-content: center; /* Центрування кнопок */
+    gap: 1px; /* Відстань між кнопками */
+    margin-top: 10px; /* Відступ зверху */
+}
+
+button {
+    padding: 10px 20px; /* Внутрішні відступи для зручності */
+    margin: 10px; /* Відступи навколо кнопки */
+	width:300px;
+	height:50px; 
+	font-size:24px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Додає внутрішній відступ для мобільних пристроїв */
+    }
+}
+
+label {
+	font-size:24px;
+}
+
+input[type='radio'] {
+  transform: scale(1.5); /* размер кнопки увеличивается, но макет сохраняет себя */
+}

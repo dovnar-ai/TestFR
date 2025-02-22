@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Вказуємо тип документа як HTML5 -->
+<html lang="uk"> <!-- Вказуємо мову сторінки (українська) -->
+<head>
+    <!-- Підключаємо бібліотеку EmailJS для відправки електронних листів -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл з атрибутом defer (завантажується після завантаження сторінки) -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки (UTF-8 для підтримки кирилиці) -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Безнадійність та задоволення</title>
+    <!-- Підключаємо CSS файл для стилізації сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="button-group">
+        <!-- Заголовок для вибору безнадійності -->
+        <h2>Безнадійність</h2>
+        <!-- Радіобутон для вибору "Так" -->
+        <input type="radio" id="0" name="beznad" value="Так">
+        <!-- Підпис для радіобутона "Так" -->
+        <label for="0">Так</label><br>
+        <!-- Радіобутон для вибору "Ні" -->
+        <input type="radio" id="1" name="beznad" value="Ні">
+        <!-- Підпис для радіобутона "Ні" -->
+        <label for="1">Ні</label><br>
+		
+		<!-- Заголовок для вибору задоволення -->
+        <h2>Неможливість отримувати задоволення від щоденних справ</h2>
+        <!-- Радіобутон для вибору "Так" -->
+        <input type="radio" id="0" name="zadov" value="Так">
+        <!-- Підпис для радіобутона "Так" -->
+        <label for="0">Так</label><br>
+        <!-- Радіобутон для вибору "Ні" -->
+        <input type="radio" id="1" name="zadov" value="Ні">
+        <!-- Підпис для радіобутона "Ні" -->
+        <label for="1">Ні</label><br>
+		
+		
+        <div class="navigation-buttons">
+        <form action="./page12.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+		
+
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page14.html" method="get">
+            <button id="2" type="submit">Далі</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
