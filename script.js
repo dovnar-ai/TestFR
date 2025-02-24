@@ -1206,7 +1206,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "2-Ru5oRquKtddIUuP", 
             "service_l1jvuig", 
             "template_bta987j", 
-            "a.dovnar@khai.edu", 
+            "kolesnikova1973@gmail.com", 
             fullName, 
             dataString);
 
