@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключення бібліотеки EmailJS для відправки електронних листів -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Підключення власного скрипта (script.js) з відстроченим виконанням -->
+    <script src="./script.js" defer></script>
+    <meta charset="UTF-8"> <!-- Визначення кодування сторінки -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Підтримка адаптивного дизайну -->
+    <title>Друзі</title> <!-- Заголовок сторінки -->
+    <!-- Підключення стилів (styles.css) для оформлення сторінки -->
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <!-- Контейнер для групи кнопок та запитання -->
+    <div class="button-group">
+        <!-- Заголовок для питання -->
+        <h2>Чи маєте Ви друзів?</h2>
+        
+        <!-- Радіо кнопки для вибору відповіді на питання -->
+        <!-- Перша опція: Не було й немає друзів -->
+        <input type="radio" id="0" name="friends" value="Не було й немає">
+        <label for="0">Не було й немає</label><br>
+        
+        <!-- Друга опція: Були друзі, але зараз немає -->
+        <input type="radio" id="1" name="friends" value="Були, тепер нема">
+        <label for="1">Були, тепер нема</label><br>
+        
+        <!-- Третя опція: Є друзі, але зустрічаються рідко -->
+        <input type="radio" id="2" name="friends" value="Є, але зустрічаємося рідко">
+        <label for="2">Є, але зустрічаємося рідко</label><br>
+        
+        <!-- Четверта опція: Є друзі, зустрічаються часто -->
+        <input type="radio" id="3" name="friends" value="Є, зустрічаємося часто">
+        <label for="3">Є, зустрічаємося часто</label><br>
+        <div class="navigation-buttons">
+        <!-- Кнопка для повернення на попередню сторінку -->
+        <form action="./page22.html" method="get">
+            <button type="submit">Назад</button>
+        </form>
+        
+        <!-- Кнопка для завершення -->
+        <button id="4" onclick="finish(this)">Закінчити</button>
+        </div>
+    </div>
+</body>
+</html>

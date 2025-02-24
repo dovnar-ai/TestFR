@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключаємо бібліотеку EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Опитування факторів ризику</title>
+    <!-- Підключаємо CSS файл -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="container">
+        <!-- Заголовок з поточною датою -->
+        <h1><span id="currentDate"></span></h1>
+        <!-- Заголовок опитування -->
+        <h2>Опитування кардіометаболічних факторів ризику</h2>
+        <!-- Підказка для користувача -->
+        <p>Введіть свої ПІБ</p>
+        <!-- Поле для введення повного імені користувача -->
+        <input type="text" id="fullName" placeholder="Повне ім'я">
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page1.html" method="get">
+            <button id="1" type="submit">Далі</button>
+        </form>
+    </div>
+</body>
+</html>

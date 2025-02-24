@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <!-- Підключаємо бібліотеку EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Підключаємо власний JavaScript файл -->
+    <script src="./script.js" defer></script>
+    <!-- Вказуємо кодування сторінки -->
+    <meta charset="UTF-8">
+    <!-- Налаштовуємо viewport для коректного відображення на мобільних пристроях -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок сторінки -->
+    <title>Введення email</title>
+    <!-- Підключаємо CSS файл -->
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Основний контейнер для вмісту сторінки -->
+    <div class="container">
+        <p><h2>Якщо бажаєте мати повідомлення від лікаря, введіть свій email</h2></p>
+        <!-- Поле для введення email користувача -->
+        <input type="text" id="email_p" placeholder="my_email@examp.com">
+        
+        <!-- Форма для переходу на наступну сторінку -->
+        <form action="./page2.html" method="get">
+            <button id="1" type="submit">Далі</button>
+        </form>
+    </div>
+</body>
+</html>
